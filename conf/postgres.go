@@ -11,9 +11,9 @@ var Postgres postgresStruct
 
 func init() {
 	Postgres = postgresStruct{
-		User:     "postgres",
-		Password: "1538",
-		DBName:   "db_proj",
+		User:     "docker",
+		Password: "docker",
+		DBName:   "docker",
 		Port:     "5432",
 	}
 }
