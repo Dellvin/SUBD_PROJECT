@@ -45,6 +45,6 @@ func main() {
 	ude.New(r, userRepo, forumRepo)
 	fde.New(r, forumRepo, userRepo)
 	port := ":5000"
-	fmt.Println("Starts on ", port)
+	fmt.Println("Starts on:", port)
 	log.Error().Msgf(fasthttp.ListenAndServe(port, json.AppJson(r.Handler)).Error())
 }
